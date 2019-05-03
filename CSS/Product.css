@@ -1,0 +1,9 @@
+.ff {
+	font-family: 'Nunito';
+}
+.product-image img, box-qc img{
+    width: 100%;
+}
+.box-product{
+    padding-top: 15px;
+}

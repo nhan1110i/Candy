@@ -1,8 +1,7 @@
-body{
-  background: #f44336;
-}
+
 .ff {
-	font-family: 'Nunito';
+  font-family: 'Nunito';
+  
 }
 .fw-600 {
 	font-weight: 600;
@@ -94,7 +93,7 @@ body{
     text-transform: uppercase;
     text-align: center;
     background-color: #79a32e;
-	padding-top: 10px;
+	  padding-top: 10px;
     padding-bottom: 10px;
   }
   
@@ -125,16 +124,20 @@ body{
 	background-color: #79a32e;
 	color: #fff;
 	}
-	
+  .main-menu-wrapper{
+    padding-top: 12px;
+  }
   
   .main-menu-wrapper ul{
     background: transparent;
     list-style-type: none;
   }
   .main-menu-wrapper li{
+    font-size: 15px !important;
     display: inline-block;
     margin-left: -5px;
     padding-left: 15px;
+    
   }
   .main-menu-wrapper li a {
 	  color: #444;
@@ -151,7 +154,7 @@ body{
   }
   .section-title{
     border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
+	  border-top-right-radius: 10px;
     display: block;
     color: #fff;
     font-size: 17px;
@@ -160,7 +163,7 @@ body{
     text-align: center;
     background-color: #79a32e;
     height: 40px;
-	padding-top: 10px;
+	  padding-top: 10px;
   }
   .section-title a{
     color: #ffff;
@@ -183,6 +186,7 @@ body{
   }
   .product-thumbnail-item img{ 
     width: 100%;
+    
   }
   .product-title{
     margin: 10px 0 5px;

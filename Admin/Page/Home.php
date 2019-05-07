@@ -18,7 +18,6 @@
         <script src='../CSS/JS.js' type="text/javascript"></script>
 </head>
 <body>
-    <form id="form1" runat="server">
         <!-- <%--navbar admin--%> -->
         <div>
             <div id="mySidenav" class="sidenav">
@@ -35,7 +34,7 @@
                 </div>
                 <div class="container-fluid">
                     <ul class="nav nav-pills nav-stacked">
-                        <li><a href="?page=Order" class="item-sidebar"><span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;Đơn Hàng</a></li>
+                        <li><a href="?page=ManageOrder" class="item-sidebar"><span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;Đơn Hàng</a></li>
                         <li><a href="?page=ManageProduct" class="item-sidebar"><span class="glyphicon glyphicon-align-justify"></span>&nbsp;Danh mục Sản Phẩm</a></li>
                         <li><a href="?page=AddNewProduct" class="item-sidebar"><span class="glyphicon glyphicon-plus"></span>&nbsp;Thêm sản phẩm</a></li>
                         <li><a href="?page=ManageCategory" class="item-sidebar"><span class="glyphicon glyphicon-tags"></span>&nbsp;Quản lý danh mục</a></li>
@@ -77,6 +76,5 @@
                 </div>
             </div>
         </div>
-    </form>
 </body>
 </html>

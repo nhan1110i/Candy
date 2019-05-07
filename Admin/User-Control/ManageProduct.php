@@ -1,3 +1,4 @@
+
 <div class="container-fluid">
         <div class="panel panel-success">
             <div class="panel-heading text-center">
@@ -14,22 +15,28 @@
                         <th>Trạng thái</th>
                         <th>Sửa</th>
                         <th>Xóa</th>
-                        <th>Xem</th>
+                        
                     </tr>
                     <?php
-                        $query = "SELECT * FROM product";
+                    
+                        $query = "SELECT * FROM product INNER JOIN category ON product.ProductCategoryID = category.CategoryID";
                         $data = mysqli_query($conn,$query);
                         $order = 1;
                         while($array = mysqli_fetch_assoc($data)){
                             echo '<tr><td>'.$order.'</td>';
                             echo '<td>'.$array['ProductName'].'</td>';
                             echo '<td>'.$array['ProductPrice'],'</td>';
-                            echo '<td>'.$array['ProductImage'].'</td>';
-                            echo '<td>'.$array['ProductCategoryID'].'</td>';
+                            echo '<td>';
+                            $arrImage = explode('*',$array['ProductImage']);
+                            foreach($arrImage as $key => $value){
+                                echo '<img src="../IMG/ProductImage/'.$value.'" class="img-thumbail" />&nbsp;&nbsp;';
+                            }
+                            echo '</td>';
+                            echo '<td>'.$array['CategoryName'].'</td>';
                             echo '<td> Hiển thị </td>';
-                            echo '<td><a href ="#"><i class="glyphicon glyphicon-edit"></i></a></td>';
-                            echo '<td><a href ="#"><i class="glyphicon glyphicon-remove"></i></a></td>';
-                            echo '<td><a href ="#"><i class="glyphicon glyphicon-eye-open"></i></a></td>';
+                            echo '<td><a href ="?page=UpdateProduct&ProductID='.$array['ProductID'].'"><i class="glyphicon glyphicon-edit"></i></a></td>';
+                            echo '<td><a href ="../Action/DeleteProduct.php?idProduct='.$array['ProductID'].'"><i class="glyphicon glyphicon-remove"></i></a></td>';
+                            $order++;                    
                         }
                     ?>
                 </table>

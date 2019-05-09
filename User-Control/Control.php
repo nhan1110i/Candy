@@ -24,6 +24,9 @@
         case 'CompleteOrder':
             include('CompleteOrder.php');
             break;
+        case 'Search':
+        include('Search.php');
+        break;
         default:
         include('Home.php');
         break;

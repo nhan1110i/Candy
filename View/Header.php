@@ -4,20 +4,25 @@
                     <div class="col-sm-3">
                         <div class="logo">
                             <a href="index.php">
-                            <img src="Asset/Image/logo.png" />
+                            <img src="Asset/Image/logo.jpg" />
 </a>
                         </div>
                     </div>
                     <div class="col-sm-5 header-control">
-                        <div class="input-group">
-                            <input id="email" type="text" class="form-control" name="email" placeholder="Tìm kiếm">
-                            <span class="input-group-addon"><i class="fa fa-search"></i></span>
-                        </div>
+                    <form>
+    <div class="input-group">
+    <input type="hidden" value="Search" name="page">
+      <input type="text" class="form-control" placeholder="Search" name="Keyword">
+      <div class="input-group-btn">
+        <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+      </div>
+    </div>
+  </form>
                     </div>
                     <div class="col-sm-4 header-control">
                         <a class="btn btn-success" href="Admin/index.php"><i class="fa fa-user"></i> Đăng nhập</a>
                         <a class="btn btn-info" href="?page=Cart"><i class="fa fa-shopping-cart"></i> Giỏ hàng</a>
-                        <button class="btn btn-danger"> 19002111</button>
+                        <button class="btn btn-danger"> 0326.039.861</button>
                     </div>
                 </div>
                 <div class="row header-menu">

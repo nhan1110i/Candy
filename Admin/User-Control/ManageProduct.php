@@ -25,7 +25,7 @@
                         while($array = mysqli_fetch_assoc($data)){
                             echo '<tr><td>'.$order.'</td>';
                             echo '<td>'.$array['ProductName'].'</td>';
-                            echo '<td>'.$array['ProductPrice'],'</td>';
+                            echo '<td>'.number_format($array['ProductPrice']).' đ</td>';
                             echo '<td>';
                             $arrImage = explode('*',$array['ProductImage']);
                             foreach($arrImage as $key => $value){

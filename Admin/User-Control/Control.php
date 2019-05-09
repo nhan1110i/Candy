@@ -17,11 +17,15 @@
             case 'ManageOrder':
             include('ManageOrder.php');
             break;
+            case 'ViewOrder':
+            include('ViewOrderDetail.php');
+            break;
             default:
+            include('ManageOrder.php');
             break;
         }
         
     }else{
-        $page='';
+        include('ManageOrder.php');
     }
 ?>

@@ -1,5 +1,5 @@
 <?php
-            $query = "SELECT * FROM category";
+            $query = "SELECT * FROM category LIMIT 3";
             $temp = mysqli_query($conn,$query);
             while($arrCategory = mysqli_fetch_assoc($temp)){
                 

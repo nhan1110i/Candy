@@ -60,7 +60,10 @@
 		?>
 		<div class="col-sm-3">
 			<div class="product-box">
-				<img src="Admin/IMG/ProductImage/<?php echo $ImageList[0]; ?>">
+			<a href="?page=Product&ProductID=<?php echo $arrProduct['ProductID'];?>">
+			<img src="Admin/IMG/ProductImage/<?php echo $ImageList[0]; ?>">
+			</a>
+				
 				<div class="text-center">
 					<br>
 					<a href="Action/AddProduct.php?ProductID=<?php echo $arrProduct['ProductID']; ?> " class="btn btn-danger"><i class="fa fa-cart-plus"></i> Thêm vào giỏ hàng</a>

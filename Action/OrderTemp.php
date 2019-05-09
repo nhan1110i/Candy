@@ -1,15 +1,14 @@
 <?php
     include('../Connect/Connect.php');
     session_start();
-     $name = $_SESSION['name'] = $_POST['name'];
-     $phone = $_SESSION['phone'] = $_POST['phone'];
-     $mail = $_SESSION['mail'] = $_POST['mail'];
-     $add = $_SESSION['add'] = $_POST['add'];
-     $_paymet= $_SESSION['payment'] = $_POST['coradio'];
-     $TotalQuantity = $_SESSION['TotalQuantity'];
-     $TotalMoney = $_SESSION['TotalMoney'];
-     
      if($_POST['coradio'] == 'cod'){
+        $name = $_SESSION['name'] = $_POST['name'];
+        $phone = $_SESSION['phone'] = $_POST['phone'];
+        $mail = $_SESSION['mail'] = $_POST['mail'];
+        $add = $_SESSION['add'] = $_POST['add'];
+        $_paymet= $_SESSION['payment'] = $_POST['coradio'];
+        $TotalQuantity = $_SESSION['TotalQuantity'];
+        $TotalMoney = $_SESSION['TotalMoney'];
          $query = "INSERT INTO customer (CustomerName,CustomerPhone,CustomerEmail,CustomerAdd) VALUES ('$name','$phone','$mail','$add')";
          mysqli_query($conn,$query);
          $queryLastCustomer = "SELECT * FROM customer ORDER BY CustomerID DESC LIMIT 1";
@@ -28,6 +27,9 @@
              mysqli_query($conn,$queryInsertOderDetail);
          }
          header("Location: ../index.php?page=CompleteOrder");
+     }
+     if($_POST['coradio' == 'nganluong']){
+
      }
     
 

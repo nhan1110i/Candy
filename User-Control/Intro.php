@@ -1,3 +1,4 @@
+<div class="text-center">
 <h4 class="text-center">
 Vitamin House - Chuỗi cửa hàng bánh kẹo và nước uống ngoại nhập được yêu thích nhất
 </h4>
@@ -17,3 +18,4 @@ Dưới đây là các dòng sản phẩm chính Vitamin House hiện đang cung
 <br>- Các loại Hạt sấy khô nổi tiếng thế giới.
 Ngoài ra còn rất nhiều sản phẩm thơm ngon khác cho các bạn lựa chọn... Còn chần chờ gì mà không ghé Vitamin House để có cơ hội thưởng thức các loại bánh kẹo hàng đầu thế giới nhé !
 </p>
+</div>

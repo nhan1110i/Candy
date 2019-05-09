@@ -39,7 +39,7 @@
     
                 </td>
                 <td class="text-center">
-                    <strong><?php echo $Product['ProductPrice'] ?> đ</strong>
+                    <strong><?php echo number_format($Product['ProductPrice']) ?> đ</strong>
                 </td>
                 <td class="text-center">
                     <strong><?php echo $Quantity;
@@ -47,7 +47,7 @@
                     ?></strong>
                 </td>
                 <td class="text-center">
-                    <strong><?php echo $Quantity*$Product['ProductPrice'];
+                    <strong><?php echo number_format($Quantity*$Product['ProductPrice']);
                         $TotalMoney += $Quantity*$Product['ProductPrice'];
                     ?> đ</strong>
                 </td>
